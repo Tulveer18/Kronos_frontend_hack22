@@ -8,7 +8,7 @@
 .brand{
     position: absolute;
     left: 50%;
-    margin-left: -50px !important;
+    margin-left: -50px !important;  
     display: block;
 }
 #carouselExampleCaptions{
@@ -73,7 +73,7 @@
 }
 .h2{
     font-weight: 500;
-    line-height: 1.2;
+    line-height: 1.2;    
 }
 *, ::after, ::before {
     box-sizing: border-box;
