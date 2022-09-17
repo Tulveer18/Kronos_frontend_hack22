@@ -10,7 +10,7 @@
     "allowJs": true,
     "lib": [ "DOM", "ES2015" ],
     "moduleResolution": "Node"
-
+    
   },
   "exclude": [
     "node_modules",
