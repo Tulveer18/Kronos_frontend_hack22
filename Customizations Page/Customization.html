@@ -5,18 +5,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Customer Care</title>
-
+    <title>Customisations</title>
+    <script src="Customizations.js" defer></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
         integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
         crossorigin="anonymous" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!--Arbutus Font-->
+    <link href='https://fonts.googleapis.com/css?family=Arbutus' rel='stylesheet'>
+    <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="kronos_Customizations_page.css">
 </head>
 
 <body>
-    <!--Navbar-->
+
     <nav class="navbar fixed-top navbar-expand-lg navbar-light ">
         <div class="container-fluid">
 
@@ -31,19 +34,21 @@
                 <ul class="navbar-nav me-auto mb-auto mb-lg-auto">
                     <li class="nav-item">
                         <a class="nav-link mt-1" style="font-size: 1.5rem;" aria-current="page"
-                            href="../Customizations Page/Customizations.html">Customization</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link mt-1" style="font-size: 1.5rem;" aria-current="page" href="../Watches Page/Watches_Page.html">Watches</a>
+                            href="Customizations.html">Customization</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link mt-1" style="font-size: 1.5rem;" aria-current="page"
-                            href="customer.html">Customer Care</a>
+                            href="../Watches Page/Watches_Page.html">Watches</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link mt-1" style="font-size: 1.5rem;" aria-current="page"
+                            href="../Customer Care Page/customer.html">Customer Care</a>
                     </li>
                 </ul>
                 <a class="navbar-brand brand d-flex justify-content-center" href="../index.html"><img
                         src="Images\KRONOS_logo-removebg-preview-removebg-preview.png" alt="Logo" /></a>
                 <!--Login-->
+                <!-- <li class="nav-item"> -->
 
                 <!-- Button trigger modal -->
                 <button type="button" class="btn btn1" data-bs-toggle="modal" data-bs-target="#LoginModal">
@@ -62,11 +67,13 @@
 
 
 
+
                 <i class="fa fa-duotone fa-cart-plus" style="font-size:3rem;"></i>
+
             </div>
     </nav>
 
-    <!-- Modal -->
+    <!--Login Modal -->
     <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -105,7 +112,7 @@
     </div>
     </div>
 
-    <!-- Modal -->
+    <!--SignUp Modal -->
     <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -141,221 +148,337 @@
             </div>
         </div>
     </div>
-    </div>
 
-    <!--CONTACT NAVBAR-->
-    <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid" style="background-color: #343A40; height: 50px;">
-            <span style="color: white; margin-left: 12px;">CONTACT</span>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
+    <!--Carousel-->
+
+    <div id="carouselExampleCaptions" class="carousel slide carousel-fade" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                aria-label="Slide 4"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4"
+                aria-label="Slide 5"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5"
+                aria-label="Slide 6"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="6"
+                aria-label="Slide 7"></button>
         </div>
-    </nav> -->
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Images/carousel1.jpg" class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel2.jpg" class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel3.jpg" style="background-image: cover;" class="d-block w-100" alt="...">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel4.jpg" style="background-image: cover;" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel5.jpg" style="background-image: cover;" class="d-block w-100" alt="...">
 
-    <!--Paragraph-->
-    <div class="main1" style="text-align: center;">
-        <p>Have questions? Send Us a Message/Feedback.</p>
-        <p> We'll respond within 24 hours!</p>
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel6.jpg" style="background-image: cover;" class="d-block w-100" alt="...">
+
+            </div>
+            <div class="carousel-item">
+                <img src="Images/carousel7.jpg" style="background-image: cover;" class="d-block w-100" alt="...">
+
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
     </div>
 
-    <!--FORM-->
-    <div class="container1"><br>
-        <form style="text-align: center;">
-            <div class="main2" style="margin-left: 50px; margin-right: 50px;">
+    <div class="container mt-5">
 
-                <div class="row g-2">
+        <h2 class="pb-2 border-bottom" id="custom">Customizations</h2>
 
-                    <div class="col-md">
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInputGrid"
-                                placeholder="name@example.com">
-                            <label for="floatingInputGrid">Enter name</label>
+        <div class="container">
+
+            <!--CUSTOMIZATION 1-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+
+                <div class="col-md-8">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">HEALTH UTILITY</strong>
+                            <p class="card-text mb-auto">Health is of utmost importance to everyone. We offer various
+                                Health Utilities like a pulse monitor, blood pressure meter, pedometer, an ECG, an
+                                oximeter (which is quite handy these days) and much more. <br>Women can track of their
+                                periods cycle and get a reminder for their next due date. <br>The health utility also
+                                detects a heart attack, low sugar, fatigue and when a user falls unconscious. In case of
+                                such incidents, the watch will immediately contact a nearby hospital and arrange an
+                                ambulance.<br><strong>'TIME'</strong> is crucial in such cases.
+                            </p>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="Images\Health.png" alt="Health Watch"
+                                style="padding: 15px; margin-top: 40px; margin-right: 10px;">
+                            <svg class="bd-placeholder" width="200" height="10" xmlns="Images\Health.png" role="img"
+                                aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+                                <title>Placeholder</title>
+                            </svg>
+
                         </div>
                     </div>
+                </div>
+            </div>
 
-                    <div class="col-md">
-                        <div class="form-floating">
-                            <input type="email" class="form-control" id="floatingInputGrid"
-                                placeholder="name@example.com">
-                            <label for="floatingInputGrid">Email address (name@example.com)</label>
+            <!--CUSTOMIZATION 2-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+                <div class="col-md-8">
+                    <div
+                        class="row bg-grey g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="Images\Smart.jpg" alt="Smart" style="padding: 15px; margin-top: 20px;">
+                            <svg class="bd-placeholder-img" width="200" height="10" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            </svg>
+                        </div>
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">OS UTILITY</strong>
+                            <p class="card-text mb-auto">A sleep app allows you to set a bedtime routine by tracking
+                                your sleeping trends and gives you personalized goals to achieve and maintain good
+                                health. <br>Leave your phone behind. Use untethered GPS to track your run’s distance
+                                (and play your stored music) on your watch.<br>Thanks to its new design, you can access
+                                your information faster, get proactive help from Google Assistant and access smarter
+                                health coaching. All with a swipe of your finger.</p>
+
                         </div>
                     </div>
-                </div><br>
-                <div class="mb-3">
-                    <div class="form-floating">
+                </div>
+            </div>
 
-                        <input type="email" class="form-control" id="floatingInputGrid" placeholder="name@example.com"
-                            style="height: 200px;">
-                        <label for="floatingInputGrid">Type your message here</label>
+            <!--CUSTOMIZATION 3-->
+            <div class="container px-4 py-5 row featurette d-flex justify-content-center align-items-center my-5"
+                id="hanging-icons">
+                <div class="col-md-8">
+                    <div
+                        class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <strong class="d-inline-block mb-2 text-primary">BUSINESS UTILITY</strong>
+                            <p class="card-text mb-auto">Business entities can select the office customization which
+                                will link all the team members and send notifications or reminders of a meeting. <br>The
+                                'main employer' can even see the progress of the employees in the form of stats. Users
+                                can keep track of their next flight and keep tabs on their deadlines which is quite
+                                handy.<br> The Office customization offers a lot of utilities which makes going to the
+                                office fun.</p>
+
+                        </div>
+                        <div class="col-auto d-none d-lg-block">
+                            <img src="Images\Business.jpg" alt="Business">
+                            <svg class="bd-placeholder-img" width="200" height="10" xmlns="http://www.w3.org/2000/svg"
+                                role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice"
+                                focusable="false">
+
+                            </svg>
+
+                        </div>
                     </div>
-                </div>
-            </div>
-
-            <!--Send Message Button-->
-            <button type="submit" class="btn  btn-outline-secondary" style="margin: 10px;">
-                Send message
-            </button>
-
-            <!--Reset Form Button-->
-            <button type="reset" class="btn btn-outline-secondary">
-                Reset form
-            </button>
-        </form><br>
-    </div><br><br>
-
-    <!--FAQs Accordian-->
-    <div class="accordion accordion-flush" id="accordionFlushExample" style="margin-left:40px; margin-right: 40px;">
-
-        <p style="font-size:x-large; color: #212121;"><b><i class="far fa-question-circle"></i> Frequently Asked
-                Questions(FAQs)</b></p><br>
-        <div class="container2" style="padding: 30px;"><br>
-            <p><b>BUYING A KRONOS</b></p><br>
-
-            <!--1st-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingOne">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
-                        Where can I purchase a Kronos watch?
-                    </button>
-                </h2>
-                <div id="flush-collapseOne" class="accordion-collapse collapse" aria-labelledby="flush-headingOne"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">New and genuine Kronos watches are exclusively sold by Official Kronos
-                        Retailers, who warrant the authenticity of your Kronos and ensure its international five-year
-                        guarantee.</div>
-                </div>
-            </div>
-
-            <!--2nd-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingTwo">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
-                        How can I ensure the authenticity of a Kronos watch?
-                    </button>
-                </h2>
-                <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Kronos watches should be only purchased from Official Kronos Retailers,
-                        who
-                        are authorized to sell and maintain Kronos watches. With the necessary skill, training, know-how
-                        and
-                        special equipment on site, they guarantee the authenticity of each and every part of your Rolex,
-                        and
-                        can ensure its reliability over time.</div>
-                </div>
-            </div>
-
-            <!--3rd-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingThree">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseThree" aria-expanded="false" aria-controls="flush-collapseThree">
-                        How long is the guarantee of a Kronos watch?
-                    </button>
-                </h2>
-                <div id="flush-collapseThree" class="accordion-collapse collapse" aria-labelledby="flush-headingThree"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">All new Kronos watches have an international five-year guarantee that
-                        will
-                        be completed and dated by your Official Kronos Retailer at the time of purchase and registered
-                        with
-                        Kronos.</div>
-                </div>
-            </div><br>
-
-            <p><b>CARING FOR YOUR KRONOS</b></p>
-
-            <!--4th-->
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFour">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFour" aria-expanded="false" aria-controls="flush-collapseFour">
-                        How can I look after my Kronos watch?
-                    </button>
-                </h2>
-                <div id="flush-collapseFour" class="accordion-collapse collapse" aria-labelledby="flush-headingFour"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">You can help preserve its lustre by cleaning it occasionally with a
-                        microfiber cloth. You can also wash the case and bracelet (except leather straps) from time to
-                        time
-                        using soapy water and a soft brush. After wearing your watch in the sea, it is important to
-                        rinse it
-                        with fresh water to remove any salt and sand deposits. Before cleaning your watch, always ensure
-                        that the winding crown is screwed down properly against the case to guarantee waterproofness.
-                    </div>
-                </div>
-            </div>
-
-            <!--5th-->
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingFive">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseFive" aria-expanded="false" aria-controls="flush-collapseFive">
-                        Does a Kronos resist to extreme conditions like snow or cold?
-                    </button>
-                </h2>
-                <div id="flush-collapseFive" class="accordion-collapse collapse" aria-labelledby="flush-headingFive"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">Kronos watches have proved themselves from the start in the most extreme
-                        conditions imaginable – from the depths of the deepest oceans to the summits of the highest
-                        mountains,
-                        in the air and on the race track. Moreover, to ensure that all Rolex watches can live up to
-                        these
-                        high
-                        expectations, every single one is tested to extremes before it is allowed to leave the Rolex
-                        site.
-                    </div>
-                </div>
-            </div><br>
-
-            <p><b>SERVICING YOUR KRONOS</b></p>
-
-            <!--6th-->
-
-            <div class="accordion-item">
-                <h2 class="accordion-header" id="flush-headingSix">
-                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#flush-collapseSix" aria-expanded="false" aria-controls="flush-collapseSix">
-                        What does a Kronos servicing consist of?
-                    </button>
-                </h2>
-                <div id="flush-collapseSix" class="accordion-collapse collapse" aria-labelledby="flush-headingSix"
-                    data-bs-parent="#accordionFlushExample">
-                    <div class="accordion-body">When your watch is serviced by Kronos, the watch is completely
-                        dismantled
-                        and
-                        all of its components are ultrasonically cleaned. Each individual component is closely examined
-                        and
-                        those that no longer meet Kronos's functional and aesthetic specifications are replaced with
-                        genuine
-                        Kronos parts. The movement is carefully lubricated then electronically tested to guarantee its
-                        timing
-                        accuracy; the case and the metal bracelet are meticulously refinished to restore their lustre.
-                        Your
-                        Kronos then undergoes a series of rigorous technical tests and checks to guarantee its
-                        waterproofness,
-                        power reserve and precision. After a complete Kronos service, your watch is covered by a service
-                        guarantee.</div>
                 </div>
             </div>
         </div>
-    </div><br><br>
 
-    <!--Alert-->
-    <div class="alert alert-primary alert-dismissible fade show" role="alert">
-        REACH OUR TEAM! We love questions and feedback - and we're always happy to help! Your feedback is valuable!
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+        <!--Selecting customisations-->
+
+        <section class="text-gray-600 body-font">
+            <div class="container my-20 px-5 py-24 mx-auto flex flex-wrap d-flex justify-content-center "
+                style="background-color: rgb(241, 241, 241);border-radius: 15px; box-shadow:10px 10px 10px 10px;">
+
+                <center>
+
+                    <h1 class="border-bottom pb-2" style="font-size:50px; margin-bottom:60px ; color:black">Customise
+                        your watch</h1>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-black inline-flex items-center justify-center text-white relative z-10">
+
+                            <i class="fas fa-running" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Fitness Tracker</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left; ">You can
+                                set your routine with the fitness features by choosing from various activities, say
+                                running, swimming, yoga, cycling, cardio, etc. It measures and tracks all your moves.
+                            </p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="ft" onclick="add1()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-red-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-heartbeat" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Health Care</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;"> Stay
+                                healthy with Kronos™. Track your progress with activity goals using various apps
+                                configured with a Kronos watch such as <br> heart-rate monitor, emergency SOS, fall
+                                detection, blood oxygen sensor, ECG report, untethered GPS etc. </p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="hc" onclick="add2()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-yellow-400 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-business-time" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Schedule module</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Features
+                                which let you stay on track. Gives you reminders or audible alerts when it is time to
+                                leave for an appointment, take your medicine or notify you about an incoming text
+                                message.</p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="sm" onclick="add3()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative pb-12">
+                        <div class="h-full w-10 absolute inset-0 flex items-center justify-end">
+                            <div class="h-full w-1 bg-gray-200 pointer-events-none"></div>
+                        </div>
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-green-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-fingerprint" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Biometric Authentication</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Biometric
+                                Authentication with smartwatch provides not only an instant mechanism of authentication
+                                but at the same time more secure too.</p>
+
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="ba" onclick="add4()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <div class="flex relative">
+                        <div
+                            class="flex-shrink-0 w-20 h-20 rounded-full bg-indigo-600 inline-flex items-center justify-center text-white relative z-10">
+                            <i class="fas fa-microphone" style="font-size: 40px;"></i>
+                        </div>
+                        <div class="flex-grow pl-4">
+                            <h2
+                                class="font-medium title-font text-3xl text-gray-900 mb-1 tracking-wider d-flex justify-content-start">
+                                Voice Assistant</h2>
+                            <p class="leading-relaxed d-flex justify-content-start" style="text-align: left;">Get
+                                proactive help from Voice Assistant while you're on the go. Whether you need to initiate
+                                a workout, check the weather for the day or get quick answers.</p>
+                        </div>
+                        <button class="btn btn-primary d-flex justify-content-xl-end" id="va" onclick="add5()"
+                            style="margin: 25px;">Add</button>
+                    </div>
+
+                    <!--Display-->
+                    <div class="container">
+                        <h2 style="font-size:40px; margin:30px ; color:black">Features Selected</h2>
+                        <p id="display"
+                            style="background-color: white; margin: 30px;padding-bottom: 20px; font-size: 30px; padding-bottom: 50px;">
+                        </p>
+                    </div>
+
+                    <button class="btn btn-primary" id="submit" onclick="reset()">View Cart</button>
+                    <button class="btn btn-primary" id="reset" onclick="reset()">Reset</button>
+                </center>
+            </div>
+        </section>
+    </div>
+    <!--SHARE THIS PAGE AND FOOTER-->
+    <div class="main">
+        <div class="share">
+            <br><br>
+            <p>SHARE THIS PAGE</p>
+            <!--Icons-->
+            <div class="icons">
+                <button type="button" class="btn btn-outline-success" title="Share this page on Facebook New tab"><i
+                        class="fab fa-facebook-f"></i></button>
+                <button type="button" class="btn btn-outline-success" title="Share this page on Twitter New tab"><i
+                        class="fab fa-twitter"></i></button>
+                <button type="button" class="btn btn-outline-success" title="Share this page on Pinterest New tab"><i
+                        class="fab fa-pinterest-p"></i></button>
+                <button type="button" class="btn btn-outline-success" title="Share this page on Linkedin New tab"><i
+                        class="fab fa-linkedin-in"></i></button>
+                <button type="button" class="btn btn-outline-success" title="Share this page on Email New tab"><i
+                        class="fa fa-envelope"></i></button>
+                <button type="button" class="btn btn-outline-success" title="View more social networks"><i
+                        class="fas fa-ellipsis-h"></i></button>
+                <br><br><br>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="links">
+                <br>
+                <p>Footer <br> Features | About | Testimonials | Contact Us <br><br> Links to all pages, Landing
+                    Page,
+                    Customer Care, Social Media Handles and much more</p>
+            </div>
+            <!--Footer-->
+            <footer>
+                <br>
+                <i class="far fa-copyright"> Copyright 2021</i>
+            </footer>
+        </div>
     </div>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
+        integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js"
+        integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
