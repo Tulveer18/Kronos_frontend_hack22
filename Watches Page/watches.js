@@ -3,7 +3,7 @@ class Watch {
     constructor(price, Model, Type) {
         this.price = price;
         this.Model = Model;
-        this.Type = Type;
+        this.Type = Type; 
     }
     display() {
         displa.innerHTML += `Price: ${this.price}<br>Model: ${this.Model}<br>Type: ${this.Type}<br><hr>`;
